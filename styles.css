@@ -1,0 +1,68 @@
+/* Alap stílusok */
+.container {
+    max-width: 720px;
+    width: 100%;
+}
+
+/* Fejléc stílusok */
+.fejlec {
+    background-image: url('https://via.placeholder.com/720x150');
+    background-size: cover;
+    padding: 20px;
+}
+
+.fejlec h1 {
+    text-align: right;
+    margin-right: 20px;
+}
+
+/* Képek stílusai */
+.main-image {
+    width: 50%;
+    min-width: 200px;
+    float: left;
+    margin-right: 15px;
+}
+
+.section-image {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+/* Media query 600px-ig */
+@media (max-width: 600px) {
+    .main-image {
+        width: 90%;
+        float: none;
+        display: block;
+        margin: 10px auto;
+    }
+    
+    .images img {
+        display: block;
+        margin: 10px auto;
+        text-align: center;
+    }
+    
+    .images p {
+        text-align: center;
+    }
+}
+
+/* Media query 400px-ig */
+@media (max-width: 400px) {
+    img {
+        display: none;
+    }
+    
+    .fejlec {
+        background-image: none;
+        background-color: rgb(216, 179, 180);
+        height: auto;
+    }
+    
+    .fejlec h1 {
+        text-align: center;
+        margin-right: 0;
+    }
+}
